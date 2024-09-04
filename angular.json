@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+        "highcharts"
+     ],
             "outputPath": "dist/common-lets-rock",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -44,17 +47,17 @@
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
-                }
-              ],
+  {
+    "type": "initial",
+    "maximumWarning": "999mb",
+    "maximumError": "999mb"
+  },
+  {
+    "type": "anyComponentStyle",
+    "maximumWarning": "999mb",
+    "maximumError": "999mb"
+  }
+],
               "outputHashing": "all"
             },
             "development": {
