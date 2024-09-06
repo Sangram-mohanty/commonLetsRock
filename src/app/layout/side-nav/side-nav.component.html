@@ -1,5 +1,5 @@
 <div class="nav-items">
-    <div class="nav-item">
+    <div class="nav-item" (click)="navigateTo('/dashboard')">
       <fa-icon [icon]="faDashboard"></fa-icon>
       <span>Dashboard</span>
     </div>
@@ -12,7 +12,7 @@
       <span>Shops</span>
       
     </div>
-    <div class="nav-item">
+    <div class="nav-item" (click)="navigateTo('/products')">
       <fa-icon [icon]="faBox"></fa-icon>
       <span>Products</span>
     </div>

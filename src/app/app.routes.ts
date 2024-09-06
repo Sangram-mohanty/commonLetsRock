@@ -18,6 +18,14 @@ export const routes: Routes = [
           path: 'dashboard',
           loadChildren: () => import('./views/dashboard/route').then((m) => m.routes)
         },
+        {
+          path: 'products',
+          loadComponent: () => import('./layout/product/product.component').then(m => m.ProductComponent),
+          data: {
+            title: 'Product Page'
+          }
+        }
+
     ]
     },
     {

@@ -4,11 +4,12 @@ import { SalesByMonthComponent } from '../sales-by-month/sales-by-month.componen
 import { SalesByCategoryComponent } from '../sales-by-category/sales-by-category.component';
 import { LastFewTransactionsComponent } from '../last-few-transactions/last-few-transactions.component';
 import { TopThreeProductsComponent } from '../top-three-products/top-three-products.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [TopWidgetsComponent,SalesByMonthComponent,SalesByCategoryComponent,LastFewTransactionsComponent,TopThreeProductsComponent],
+  imports: [TopWidgetsComponent,SalesByMonthComponent,SalesByCategoryComponent,LastFewTransactionsComponent,TopThreeProductsComponent,RouterOutlet],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
