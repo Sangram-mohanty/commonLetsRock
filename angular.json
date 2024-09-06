@@ -20,7 +20,7 @@
             "allowedCommonJsDependencies": [
         "highcharts"
      ],
-            "outputPath": "dist/common-lets-rock",
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
