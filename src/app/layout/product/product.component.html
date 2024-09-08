@@ -1,4 +1,4 @@
-<div class="d-flex flex-column mt-4">
+<!-- <div class="d-flex flex-column mt-4">
     <div class="card align-self-center w-50">
       <h4 class="card-header text-center">User List</h4>
       <div class="card-body">
@@ -68,4 +68,22 @@
             </div>
           </div>
         }
+      </div> -->
+
+      <i class="pi pi-check" style="color: slateblue"></i>
+      <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+<i class="pi pi-spin pi-cog" style="font-size: 2rem"></i>
+<p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '100%' }">
+  <ng-template pTemplate="header">
+      <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+  </ng-template>
+  <p>
+      Lorem ipsum dolor sit amet...
+  </p>
+  <ng-template pTemplate="footer">
+      <div class="flex gap-3 mt-1">
+          <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+          <p-button label="Save" class="w-full" styleClass="w-full" />
       </div>
+  </ng-template>
+</p-card>

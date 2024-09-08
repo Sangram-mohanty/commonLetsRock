@@ -1,16 +1,17 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-
+import { ButtonModule } from 'primeng/button';
 import { ModeEnum } from '../../models/mode.enum';
 import { User } from '../../models/user';
 import { UserService } from '../../services/user.service';
+import { CardModule } from 'primeng/card';
 
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule],
+  imports: [RouterOutlet, ReactiveFormsModule,CardModule,ButtonModule],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })
